@@ -47,6 +47,22 @@ GitHub Actions runs source-specific collectors on conservative schedules:
 
 Each collector writes raw source snapshots, normalized records, validation reports, and a manifest. Collection failures preserve the last known valid data and mark it stale rather than replacing it with blanks.
 
+### Collector behavior
+
+Every source collector must:
+
+- use only public pages and feeds that work without an account or authenticated session
+- check and record the source terms before onboarding
+- identify the project in its user agent and include a contact URL
+- run slowly at a documented source-specific cadence with no burst crawling
+- stop on access barriers, including 401, 403, 407, 429, CAPTCHA, challenge pages, robots denial, or an unexpected login redirect
+- make no retry through another route after a barrier; the run records the block and exits
+- stop the source immediately if the publisher asks collection to stop
+- extract factual fields only, such as item name, price, package size, hours, dates, and location; marketing descriptions and other creative prose are discarded before storage
+- save source URL, retrieval time, terms-check date, response status, and parser version in the manifest
+
+A blocked or failed collector preserves the last valid snapshot and marks it stale. It never publishes partial, blank, or guessed replacement data.
+
 ### Repository layout
 
 ```text
@@ -236,7 +252,7 @@ Confidence levels:
 - `medium`: direct record with a category-level or inferred product link
 - `low`: crowdsourced or fuzzy-matched observation awaiting stronger confirmation
 
-Every result links to its original source where a stable URL exists.
+Every result links to its original source where a stable URL exists. The site footer states that the project is not affiliated with retailers or data publishers and that prices are shown as observed.
 
 ## v1 scope
 
