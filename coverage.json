@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-09-15",
+  "locations_total": 366,
+  "locations_profiled": 366,
+  "profiles_by_confidence": {
+    "low": 218,
+    "medium": 114,
+    "high": 34
+  },
+  "profiles_by_format": {
+    "grocery": 72,
+    "discount_supermarket": 2,
+    "natural_food_store": 16,
+    "supermarket": 73,
+    "bodega_or_convenience": 6,
+    "international_supermarket": 4,
+    "unknown": 156,
+    "specialty_store": 3,
+    "farmers_market": 34
+  },
+  "taxonomy_items": 542,
+  "taxonomy_by_category": {
+    "produce": 61,
+    "meat_and_poultry": 30,
+    "seafood": 29,
+    "dairy_and_eggs": 34,
+    "bakery_and_bread": 31,
+    "pantry_and_dry_goods": 55,
+    "canned_and_jarred_goods": 30,
+    "frozen_food": 30,
+    "beverages": 30,
+    "snacks_and_sweets": 30,
+    "prepared_food_and_deli": 30,
+    "international_and_specialty": 59,
+    "dietary_and_wellness": 30,
+    "household_and_personal_care": 24,
+    "seasonal_and_holiday": 39
+  },
+  "confirmed_relationships": 0,
+  "previously_confirmed_relationships": 9,
+  "expected_rules": 19,
+  "unknown_or_ambiguous_profiles": 156,
+  "snap_authorized_confirmed": 34,
+  "snap_unknown": 332,
+  "freshness_policy": {
+    "direct_evidence_days": 30,
+    "expected_rules": "re-evaluate on profile or rule change"
+  }
+}

@@ -1,0 +1,346 @@
+[
+  {
+    "id": "rule.department.produce",
+    "when": {
+      "department_expected_or_confirmed": "produce"
+    },
+    "categories": [
+      "produce"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {department} department profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.department.meat_and_poultry",
+    "when": {
+      "department_expected_or_confirmed": "meat"
+    },
+    "categories": [
+      "meat_and_poultry"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {department} department profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.department.seafood",
+    "when": {
+      "department_expected_or_confirmed": "seafood"
+    },
+    "categories": [
+      "seafood"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {department} department profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.department.dairy_and_eggs",
+    "when": {
+      "department_expected_or_confirmed": "dairy"
+    },
+    "categories": [
+      "dairy_and_eggs"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {department} department profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.department.bakery_and_bread",
+    "when": {
+      "department_expected_or_confirmed": "bakery"
+    },
+    "categories": [
+      "bakery_and_bread"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {department} department profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.department.frozen_food",
+    "when": {
+      "department_expected_or_confirmed": "frozen"
+    },
+    "categories": [
+      "frozen_food"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {department} department profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.department.prepared_food_and_deli",
+    "when": {
+      "department_expected_or_confirmed": "prepared_food"
+    },
+    "categories": [
+      "prepared_food_and_deli"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {department} department profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.department.household_and_personal_care",
+    "when": {
+      "department_expected_or_confirmed": "household"
+    },
+    "categories": [
+      "household_and_personal_care"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {department} department profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.format.pantry_and_dry_goods",
+    "when": {
+      "formats_any": [
+        "supermarket",
+        "discount_supermarket",
+        "international_supermarket",
+        "natural_food_store",
+        "grocery"
+      ]
+    },
+    "categories": [
+      "pantry_and_dry_goods"
+    ],
+    "confidence": "low",
+    "explanation_template": "Expected from the store format profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.format.canned_and_jarred_goods",
+    "when": {
+      "formats_any": [
+        "supermarket",
+        "discount_supermarket",
+        "international_supermarket",
+        "natural_food_store",
+        "grocery"
+      ]
+    },
+    "categories": [
+      "canned_and_jarred_goods"
+    ],
+    "confidence": "low",
+    "explanation_template": "Expected from the store format profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.format.beverages",
+    "when": {
+      "formats_any": [
+        "supermarket",
+        "discount_supermarket",
+        "international_supermarket",
+        "natural_food_store",
+        "grocery"
+      ]
+    },
+    "categories": [
+      "beverages"
+    ],
+    "confidence": "low",
+    "explanation_template": "Expected from the store format profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.format.snacks_and_sweets",
+    "when": {
+      "formats_any": [
+        "supermarket",
+        "discount_supermarket",
+        "international_supermarket",
+        "natural_food_store",
+        "grocery"
+      ]
+    },
+    "categories": [
+      "snacks_and_sweets"
+    ],
+    "confidence": "low",
+    "explanation_template": "Expected from the store format profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.specialty.korean",
+    "when": {
+      "specialties_any": [
+        "korean"
+      ]
+    },
+    "item_ids": [
+      "item.gochujang",
+      "item.doenjang",
+      "item.korean_chili_flakes",
+      "item.korean_rice_cakes",
+      "item.kimchi",
+      "item.prepared_kimchi"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {specialty} specialty profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.specialty.japanese",
+    "when": {
+      "specialties_any": [
+        "japanese"
+      ]
+    },
+    "item_ids": [
+      "item.nori",
+      "item.miso_paste",
+      "item.dashi",
+      "item.soba_noodles",
+      "item.udon_noodles",
+      "item.mirin",
+      "item.sushi_rice",
+      "item.wasabi",
+      "item.japanese_curry_roux",
+      "item.prepared_sushi",
+      "item.mochi",
+      "item.pocky"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {specialty} specialty profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.specialty.chinese",
+    "when": {
+      "specialties_any": [
+        "chinese"
+      ]
+    },
+    "item_ids": [
+      "item.sichuan_peppercorns",
+      "item.doubanjiang",
+      "item.black_vinegar",
+      "item.shaoxing_wine",
+      "item.hoisin_sauce",
+      "item.oyster_sauce",
+      "item.fresh_rice_noodles",
+      "item.chili_crisp"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {specialty} specialty profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.specialty.mexican",
+    "when": {
+      "specialties_any": [
+        "mexican"
+      ]
+    },
+    "item_ids": [
+      "item.masa_harina",
+      "item.dried_ancho_chiles",
+      "item.dried_guajillo_chiles",
+      "item.tomatillos",
+      "item.mexican_crema",
+      "item.cotija_cheese",
+      "item.achiote_paste",
+      "item.mole_sauce",
+      "item.corn_tortillas"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {specialty} specialty profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.specialty.italian",
+    "when": {
+      "specialties_any": [
+        "italian"
+      ]
+    },
+    "item_ids": [
+      "item.cannellini_beans",
+      "item.polenta",
+      "item.00_flour",
+      "item.san_marzano_tomatoes",
+      "item.balsamic_vinegar",
+      "item.pecorino_romano",
+      "item.fresh_pasta",
+      "item.prosciutto",
+      "item.mortadella"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {specialty} specialty profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.specialty.middle_eastern",
+    "when": {
+      "specialties_any": [
+        "middle_eastern"
+      ]
+    },
+    "item_ids": [
+      "item.tahini",
+      "item.za_atar",
+      "item.sumac",
+      "item.pomegranate_molasses",
+      "item.harissa",
+      "item.bulgur",
+      "item.freekeh",
+      "item.halloumi",
+      "item.falafel_mix",
+      "item.prepared_falafel",
+      "item.halva"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {specialty} specialty profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  },
+  {
+    "id": "rule.specialty.indian",
+    "when": {
+      "specialties_any": [
+        "indian"
+      ]
+    },
+    "item_ids": [
+      "item.basmati_rice",
+      "item.garam_masala",
+      "item.curry_leaves",
+      "item.tamarind_paste",
+      "item.chana_dal",
+      "item.toor_dal",
+      "item.paneer",
+      "item.naan",
+      "item.ghee",
+      "item.papadum",
+      "item.prepared_curry"
+    ],
+    "confidence": "medium",
+    "explanation_template": "Expected from the {specialty} specialty profile",
+    "version": 1,
+    "reviewed_at": "2026-09-15"
+  }
+]
