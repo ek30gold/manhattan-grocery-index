@@ -17,7 +17,8 @@ A user can:
 
 - Search a generic item, brand, product name, category, or specialty term.
 - See stores and markets that carry, advertise, or are expected to offer the item.
-- Filter by neighborhood, distance, store type, brand, dietary tags, package size, price type, and freshness.
+- Filter by neighborhood, price range, distance, store type, brand, dietary tags, package size, price type, and freshness.
+- Sort results by neighborhood, price from low to high or high to low, distance, and freshness.
 - Compare like-for-like unit prices while retaining the original package and offer details.
 - Switch between map and list views.
 - See the cheapest current observed option, the cheapest nearby option, and the savings available farther away.
@@ -242,7 +243,7 @@ Every result links to its original source where a stable URL exists.
 v1 ships:
 
 - public GitHub Pages site
-- Manhattan map and neighborhood filters
+- Manhattan map with neighborhood and price filters, plus neighborhood and price sorting
 - store, specialty-store, farmers-market, and seasonal-location directory
 - item/category/brand search
 - official advertised-price observations from the first supported circular sources
